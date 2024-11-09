@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Automated Job Apps",
+    "version": "1.0",
+    "description": "Automate job applications with ease.",
+    "icons": {
+      "16": "assets/logo-16.png",
+      "48": "assets/logo-48.png",
+      "128": "assets/logo-128.png"
+    },
+    "permissions": ["storage", "tabs", "scripting"],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "assets/logo-48.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options/options.html",
+    "side_panel": {
+      "default_path": "sidepanel/sidepanel.html"
+    }
+  }
+  
